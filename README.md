@@ -1,27 +1,27 @@
 # ProjetoAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+Projeto de desenvolvimento completo de Angular.
 
-## Development server
+## Servidor de desenvolvimento
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Digite `ng serve` para executar um servidor dev. Navegue para `http://localhost:4200/`. O aplicativo atualiza automaticamente conforme novas mudanças são feitas.
 
-## Code scaffolding
+## Arquitetura (Code scaffolding)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Digite `ng generate component component-name` para gerar um novo componente. Você também pode digitar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Digite `ng build` para compilar o basics. As características da build podem ser encontradas no diretório `dist/`. Use a flag `--prod` para uma build de produção.
 
-## Running unit tests
+## Testes unitários
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Digite `ng test` para executar testes unitários via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Testes de ponta a ponta
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Digite `ng e2e` para executar testes de ponta a ponta via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Ajuda
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para obter mais ajuda sobre o Angular CLI `ng help` ou visite a página de [Visão Geral e Referências de Comandos do Angular CLI](https://angular.io/cli).
