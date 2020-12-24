@@ -4,16 +4,27 @@
       <div class="row">
         <div class="col-sm-5 form-group">
           <label for="name">Nome</label>
-          <input id="name" type="text" class="form-control">
+          <input
+            id="name"
+            type="text"
+            class="form-control"
+            #nameInput>
         </div>
         <div class="col-sm-2 form-group">
           <label for="amount">Qtd.</label>
-          <input id="amount" type="number" class="form-control" style="max-width: 100px;">
+          <input
+            id="amount"
+            type="number"
+            class="form-control"
+            style="max-width: 100px;"
+            #amountInput>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12">
-          <button class="btn btn-success" type="submit">Adicionar</button>
+        <div
+          class="col-xs-12"
+          style="display: flex; justify-content: space-between; max-width: 270px;">
+          <button class="btn btn-success" type="submit" (click)="onAddItem()">Adicionar</button>
           <button class="btn btn-danger" type="button">Deletar</button>
           <button class="btn btn-primary" type="button">Limpar</button>
         </div>
