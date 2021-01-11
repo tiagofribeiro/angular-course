@@ -1,14 +1,16 @@
 <div class="row">
   <div class="col-xs-12">
-    <button class="btn btn-success">Nova Receita</button>
+    <!-- routerLink="new" é uma opção de redirecionamento -->
+    <button class="btn btn-success" (click)="onNewRecipe()">Nova Receita</button>
   </div>
 </div>
 <hr>
 <div class="row">
   <div class="col-xs-12">
     <app-recipe-item
-    *ngFor="let rec of recipes"
+    *ngFor="let rec of recipes; let i = index"
     [recipe]="rec"
-    (recipeSelected)="onRecipeSelected(rec)"></app-recipe-item>
+    [index]="i"
+    ></app-recipe-item>
   </div>
 </div>
