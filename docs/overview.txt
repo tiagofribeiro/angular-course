@@ -1,0 +1,57 @@
+>> ====== APP OVERVIEW ====== <<
+
+All below statements are in cronological execution order.
+
+----------------------------------------------------
+
+-------
+ Start
+-------
+
+main.ts => loads app.module
+index.html => calls app.root (app.component)
+
+app.module => declares all components, imports general modules (including routing), provides services
+app-routing.module => imports /router and determine paths for all components
+app.component => calls router-outlet (which manages all routes)
+
+----------------------------------------------------
+
+--------
+ Header
+--------
+
+header.component => "static" header used in every screen
+
+----------------------------------------------------
+
+----------------
+ Recipes (Home)
+----------------
+
+recipes.component => calls recipe-list on the left side and router-outlet (for recipe sub routes) on the right side
+  - 1st column
+    recipe-list => lists all stored recipes
+
+  - 2nd column
+    recipe-start => placeholder "Selecione uma Receita" when none is selected
+    recipe-detail => detail a selected recipe
+    recipe-edit => adds or edits a recipe
+
+recipe.service => manages all recipe operations
+recipe.model => specifies the recipe data format
+
+----------------------------------------------------
+
+---------------
+ Shopping List
+---------------
+
+shopping-list.component => item editing form and lists all stored shopping items
+  shopping-edit => basic editing form for adding or editing an item
+
+shopping-list.service => manages all shopping-list operations
+
+ingredients.model => specifies the ingredient data format
+
+----------------------------------------------------

@@ -1,0 +1,11 @@
+>> TODO <<
+
+Escrever sobre as sintaxes de classes, services, components,
+decorators, bindings (property, data), directives, injections,
+authentications, requests etc
+
+
+All components follow a basic structure:
+  - .html for template
+  - .ts for logic
+  - .css for styling
