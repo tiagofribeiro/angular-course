@@ -8,17 +8,19 @@
     </div>
     <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
       <ul class="nav navbar-nav">
-        <li routerLinkActive="active"><a routerLink="/recipes">Receitas</a></li>
+        <li routerLinkActive="active" *ngIf="!isAuthenticated"><a routerLink="/auth">Login</a></li>
+        <li routerLinkActive="active" *ngIf="isAuthenticated"><a routerLink="/recipes">Receitas</a></li>
         <li routerLinkActive="active"><a routerLink="/shopping-list">Lista de Compras</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown" appDropdown>
+        <li class="dropdown" appDropdown *ngIf="isAuthenticated">
           <a style="cursor: pointer;" role="button" class="dropdown-toggle">Gerenciar<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a style="cursor: pointer;" (click)="onSaveData()">Salvar Dados</a></li>
             <li><a style="cursor: pointer;" (click)="onFecthData()">Carregar Dados</a></li>
           </ul>
         </li>
+        <li><a style="cursor: pointer;" (click)="onLogout()" *ngIf="isAuthenticated">Sair</a></li>
       </ul>
     </div>
   </div>
