@@ -1,6 +1,7 @@
-# ProjetoAngular
+# Projeto Angular - Receitas e Lista de Compras
 
-Projeto de desenvolvimento completo de Angular.
+Projeto de gerenciamento de receitas e listas de compras, desenvolvido em Angular.  
+<br>
 
 ## Servidor de desenvolvimento
 
